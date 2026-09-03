@@ -1,0 +1,19 @@
+Current Date: Fri Oct 13 12:34:56 UTC 2023
+Hostname: my-computer
+Username: ashu273k
+
+===== DISK USAGE =====
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda1        50G   20G   30G  40% /
+
+===== RUNNING PROCESSES =====
+  PID TTY          TIME CMD
+ 1234 pts/0    00:00:00 bash
+ 5678 pts/0    00:00:00 ps
+ 9101 ?        00:00:00 sshd
+ 1121 ?        00:00:00 cron
+
+Directory 'new_directory' created successfully.
+Running processes have been saved to: new_directory/running_processes.txt
+
+===== SCRIPT COMPLETED =====
