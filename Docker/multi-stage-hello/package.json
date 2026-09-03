@@ -1,0 +1,8 @@
+{
+  "name": "docker-multi-stage-hello",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node generate-page.js"
+  }
+}
