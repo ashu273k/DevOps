@@ -1,3 +1,4 @@
 First line
 Second line
 Third line
+Task 1: committed with git commit -a -m.
