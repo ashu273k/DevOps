@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+
+metadata:
+  name: ashu-backend-rs
+  labels:
+    app: ashu-backend
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: ashu-backend
+  template:
+    metadata:
+      labels:
+        app: ashu-backend
+    spec:
+      containers:
+        - name: backend
+          image: python:3.11-alpine
+          command: ["python3", "-c", "import http.server; http.server.test(HandlerClass=http.server.SimpleHTTPRequestHandler, port=8080)"]
+          ports:
+            - containerPort: 5000
