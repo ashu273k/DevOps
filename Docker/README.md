@@ -1,5 +1,22 @@
 # Docker Hello World Homework
 
+This directory contains Docker image and container exercises covering basic images, multiple application runtimes, React, and a multi-stage build.
+
+## Projects
+
+| Directory | Purpose |
+| --- | --- |
+| `docker-demo` | Basic Dockerfile demonstration |
+| `hello-node` | Node.js HTTP application |
+| `hello-python` | Python HTTP application |
+| `hello-java` | Java HTTP application |
+| `hello-apache` | Apache static web server |
+| `hello-nginx` | Nginx static web server |
+| `hello-react` | React application served from a container |
+| `multi-stage-hello` | Multi-stage Node.js build with Nginx serving the generated page |
+
+The Docker networking exercises are documented separately in [`Networking/README.md`](../Networking/README.md), including bridge networks, host networking, bind mounts, and overlay networks.
+
 Six separate Dockerized Hello World applications are included:
 
 | Application | Folder | Host URL | Container port |
@@ -44,3 +61,9 @@ To stop the containers:
 ```sh
 docker rm -f hello-node-homework hello-python-homework hello-java-homework hello-apache-homework hello-nginx-homework hello-react-homework
 ```
+
+## Multi-stage Build Evidence
+
+The multi-stage example generates a web page during the build stage and serves it from Nginx in the final image.
+
+![Multi-stage application running in Docker](multi-stage-hello/application_running_in_docker.png)
